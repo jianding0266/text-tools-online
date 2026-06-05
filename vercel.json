@@ -1,0 +1,17 @@
+﻿{
+  "redirects": [
+    { "source": "/tools/word-counter", "destination": "/", "permanent": true },
+    { "source": "/tools/case-converter", "destination": "/", "permanent": true },
+    { "source": "/tools/text-diff", "destination": "/", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ],
+  "cleanUrls": true
+}
